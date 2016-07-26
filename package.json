@@ -1,0 +1,33 @@
+{
+  "name": "gitlibrary-api",
+  "version": "0.1.0",
+  "description": "A web-based eBook library/reader (API part)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muceres/gitlibrary-api.git"
+  },
+  "keywords": [
+    "git",
+    "book",
+    "ebook",
+    "library",
+    "elibrary",
+    "gitlibrary",
+    "reader",
+    "api"
+  ],
+  "author": "yamizora",
+  "license": " GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/muceres/gitlibrary-api/issues"
+  },
+  "homepage": "https://github.com/muceres/gitlibrary-api#readme",
+  "engines": {
+    "node": "6.2.2"
+  },
+  "private": true
+}
