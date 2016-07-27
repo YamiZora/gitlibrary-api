@@ -7,7 +7,7 @@ var router = express.Router();
  */
 router.get('/', function(req, res, next) {
     // TODO: Get a list of cubes based on the passed criteria
-    res.send('GET /cubes');
+    res.status(501).send({ status: 'success', data: null });
 });
 
 /**
@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
  */
 router.get('/:cubeId', function(req, res) {
     // TODO: Get a cube based on the passed cube ID
-    res.send('GET /cubes/:cubeId');
+    res.status(501).send({ status: 'success', data: null });
 });
 
 /**
@@ -25,7 +25,7 @@ router.get('/:cubeId', function(req, res) {
  */
 router.post('/', function(req, res) {
     // TODO: Create a cube
-    res.send('POST /cubes');
+    res.status(501).send({ status: 'success', data: null });
 });
 
 /**
@@ -34,7 +34,7 @@ router.post('/', function(req, res) {
  */
 router.put('/:cubeId', function(req, res) {
     // TODO: Modify a cube based on the passed cube ID
-    res.send('PUT /cubes/:cubeId');
+    res.status(501).send({ status: 'success', data: null });
 });
 
 /**
@@ -43,7 +43,7 @@ router.put('/:cubeId', function(req, res) {
  */
 router.delete('/:cubeId', function(req, res) {
     // TODO: Delete a cube based on the passed cubes ID
-    res.send('DELETE /cubes/:cubeId');
+    res.status(501).send({ status: 'success', data: null });
 });
 
 /**
@@ -52,7 +52,7 @@ router.delete('/:cubeId', function(req, res) {
  */
 router.get('/search', function(req, res) {
     // TODO: Get cube(s) based on a search
-    res.send('GET /cubes/search');
+    res.status(501).send({ status: 'success', data: null });
 });
 
 module.exports = router;
