@@ -1,7 +1,9 @@
 var express = require('express'),
-    jsend = require('jsend');
+    jsend = require('jsend'),
+    bodyParser = require('body-parser');
 
 var router = express.Router();
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 router.use(jsend.middleware);
 
@@ -27,8 +29,10 @@ router.get('/:cubeId', function(req, res) {
  * POST /cubes
  * Create a cube 
  */
-router.post('/', function(req, res) {
+router.post('/', urlencodedParser, function(req, res) {
     // TODO: Create a cube
+    if (!req.body.name)
+	return res.status(400).jsend.fail({ error_code: 'missing_parameters', name: 'a name is required' });
     res.status(501).jsend.success(null);
 });
 
