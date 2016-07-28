@@ -1,5 +1,6 @@
 var express = require('express');
 
+// Controllers
 var cubes = require('./controllers/CubesController');
 
 var app = express();
