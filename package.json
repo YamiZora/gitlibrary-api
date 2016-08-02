@@ -4,7 +4,8 @@
   "description": "A web-based eBook library/reader (API part)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node app.js", 	
+      "test": "mocha --reporter spec --bail test/*.js"
   },
   "repository": {
     "type": "git",
