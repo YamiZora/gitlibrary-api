@@ -4,8 +4,9 @@
   "description": "A web-based eBook library/reader (API part)",
   "main": "app.js",
   "scripts": {
-      "start": "node app.js", 	
-      "test": "mocha --reporter spec --bail test/*.js"
+    "start": "node app.js",
+    "test": "mocha --reporter spec --bail",
+    "cover": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,8 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
+    "istanbul": "0.4.4",
+    "mocha": "3.0.0",
     "supertest": "1.2.0"
   }
 }
