@@ -37,4 +37,5 @@ jspm_packages
 .node_repl_history
 
 backup files
-*~
+*~test/coverage
+./coverage

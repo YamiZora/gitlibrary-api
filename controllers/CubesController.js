@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
 });
 
 /**
- * GET /cubes/:cubeId
+ * GET /cubes/:cube_id
  * Get a cube based on the passed cube ID 
  */
 router.get('/:cubeId', function(req, res) {
@@ -31,13 +31,15 @@ router.get('/:cubeId', function(req, res) {
  */
 router.post('/', urlencodedParser, function(req, res) {
     // TODO: Create a cube
-    if (!req.body.name)
-	return res.status(400).jsend.fail({ error_code: 'missing_parameters', name: 'a name is required' });
+    if (!req.body.name) {
+	return res.status(400).jsend.fail({ error_code: 'missing_parameters',
+					    name: 'a name is required' });
+    }
     res.status(501).jsend.success(null);
 });
 
 /**
- * PUT /cubes/:cubeId
+ * PUT /cubes/:cube_id
  * Modify a cubes based on the passed cube ID 
  */
 router.put('/:cubeId', function(req, res) {
@@ -46,10 +48,10 @@ router.put('/:cubeId', function(req, res) {
 });
 
 /**
- * DELETE /cubes/:cubeId
+ * DELETE /cubes/:cube_id
  * Delete a cube based on the passed cube ID 
  */
-router.delete('/:cubeId', function(req, res) {
+router.delete('/:cube_id', function(req, res) {
     // TODO: Delete a cube based on the passed cubes ID
     res.status(501).jsend.success(null);
 });
